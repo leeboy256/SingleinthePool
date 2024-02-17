@@ -1,0 +1,128 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eaeaea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+.confetti {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background-color: #f00;
+    z-index: 9999;
+}
+/* Add more color classes as needed */
+.red { background-color: #ff0000; }
+.blue { background-color: #0000ff; }
+.green { background-color: #00ff00; }
+.yellow { background-color: #ffff00; }
+.pool-table {
+    position: relative;
+    width: 800px; /* Adjusted to a fixed width for consistency */
+    height: 400px; /* Adjusted to maintain aspect ratio */
+    background-color: #004d1a;
+    margin: 0 auto 20px;
+    border: 15px solid #663300;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px; /* Slightly rounded corners for the table */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.white-ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+#cameraFeed, #overlay {
+    width: 520px; /* Set desired width */
+    height: 440px; /* Set desired height, maintain aspect ratio */
+    /* Additional styles for positioning and z-index */
+    position: absolute;
+    top: 0; /* Adjust as needed */
+    left: 0; /* Adjust as needed */
+    z-index: 1; /* Ensure video is behind the canvas */
+}
+#difficulty {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+.shot-line {
+    position: absolute;
+    width: 2px; /* Thin line for vertical orientation */
+    height: 100%; /* Stretch across the width of the table */
+    background-color: #fff; /* White line */
+    left: 25%; /* Position the line 1/4 down the table's length */
+}
+#pottedBalls {
+    margin-top: 20px;
+    display: flex;
+}
+
+.potted-ball {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.striped { 
+    background-image: linear-gradient(90deg, transparent 50%, #FFF 50%);
+    background-size: 100% 200%;
+}
+.ball {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+#selectedPottedBalls {
+    margin-top: 20px;
+    display: flex;
+}
+
+.red { background-color: red; }
+.orange { background-color: orange; }
+.yellow { background-color: yellow; }
+.purple { background-color: purple; }
+.green { background-color: green; }
+.blue { background-color: blue; }
+.maroon { background-color: maroon; }
+.black { background-color: black; }
+
+/* You might need to adjust these positions based on the actual size of your pool table */
