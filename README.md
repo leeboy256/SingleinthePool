@@ -1,1 +1,2 @@
-# Pool Website
+# SingleinthePool - Pool Website
+Interface to allow a computer to generate turns for an opponent when playing pool. A basic turn-based outcome for someone looking to play pool on their own with the sense of competition.
