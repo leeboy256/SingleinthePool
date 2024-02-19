@@ -48,10 +48,10 @@ h1 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 #cameraFeed, #overlay {
-    width: 520px; /* Set desired width */
-    height: 440px; /* Set desired height, maintain aspect ratio */
+    width: 220px; /* Set desired width */
+    height: 340px; /* Set desired height, maintain aspect ratio */
     /* Additional styles for positioning and z-index */
-    position: absolute;
+    position: REL;
     top: 0; /* Adjust as needed */
     left: 0; /* Adjust as needed */
     z-index: 1; /* Ensure video is behind the canvas */
